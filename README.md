@@ -1,4 +1,2 @@
 # nftables-zbf
-nftables Zone-based Firewall
-
-Tested with nftables 0.9. 
+nftables Zone-based Firewall. Tested with nftables 0.9. 
