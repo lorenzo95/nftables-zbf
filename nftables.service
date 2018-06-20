@@ -1,0 +1,15 @@
+[Unit]
+Description=nftables
+Documentation=man:nftables(8)
+Wants=network-pre.target
+Before=network-pre.target 
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/sbin/nft -f /etc/nftables/zbf.conf
+ExecReload=/usr/local/sbin/nft -f /etc/nftables/zbf.conf
+ExecStop=/usr/local/sbin/nft flush ruleset
+
+[Install]
+WantedBy=multi-user.target
