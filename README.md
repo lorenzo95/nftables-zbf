@@ -13,8 +13,8 @@ nftables Zone-based Firewall. Tested with nftables 0.9.
 	  |          +-----------+     v  +-------+
 	  |          |           |                |
 	  |          |           |                |
-	  |  Inside  |           +-----------+    v
-	  |          |           |           |
+	  | Inside / |           +-----------+    v
+	  |   VPN    |           |           |
 	  |          |   DMZ     |           |
 	  |          |           |    IoT    +-----------+
 	  |          |           |           |           |
